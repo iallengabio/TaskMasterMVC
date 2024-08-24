@@ -1,0 +1,35 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Parcel cache and build output
+.cache/
+.parcel-cache/
+dist/
+
+# Dependency directories
+node_modules/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Firebase
+.firebase/
+firebaseInit.ts
