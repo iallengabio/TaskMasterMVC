@@ -1,11 +1,12 @@
 import { AuthService } from '../model/services/authService';
 import { User } from '../model/entities/user';
+import { AuthPresenterInterface } from './authPresenterInterface';
 
 /**
  * AuthPresenter é responsável por gerenciar a lógica de autenticação
  * e comunicar o estado de autenticação para a View.
  */
-export class AuthPresenter {
+export class AuthPresenter implements AuthPresenterInterface{
     private authService: AuthService;
     private currentUser: User | null = null;
 

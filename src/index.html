@@ -1,35 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Master
-        
-    </title>
-    <link rel="stylesheet" href="./view/css/style.scss">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Master</title>
 </head>
+
 <body>
-    <header>
-        <h1>Task Master</h1>
-    </header>
-    <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  <header>
+    <nav>
+      <h5 class="max">Task Master</h5>
+      <button id="modeThemeButton" class="circle transparent">
+        <i>light_mode</i>
+      </button>
+      <button id="logoutButton" class="page border tertiary-border tertiary-text">
+        <i>logout</i>
+        <span>Sair</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="loadingPage" class="page active middle-align center-align responsive max">
+    <progress class="circle large"></progress>
+  </main>
+  <main id="loginPage" class="page middle-align center-align responsive max">
+
+    <article class="border round surface-bright large-padding s12 m10 l8 grid">
+      <div class="left-align s12 m6">
+        <i>login</i>
+        <h2>Fazer login</h2>
+        <p>Entre com seu email e senha ou com a sua conta do Google.</p>
+        <p>Ou <a id="googleLogin" class="underline primary-text" href="#">clique aqui</a> para fazer login com o Google
+        </p>
+      </div>
+      <div class="s12 m6">
+        <div class="large-space"></div>
+        <div class="field label border">
+          <input type="email" id="emailInput" />
+          <label for="emailInput">Email</label>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+        <div class="field label border">
+          <input type="password" id="passwordInput" />
+          <label for="passwordInput">Senha</label>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+        <div class="space"></div>
+        <nav class="right-align">
+          <button id="signUpButton" class="border">Criar conta</button>
+          <button id="loginButton" class="">Avançar</button>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <main id="singUpPage" class="page top-align responsive max vertical"></main>
+
+  <main id="taskPage" class="page top-align responsive max vertical">
 
 
-    <script type="module" src="index.ts"></script>
+  </main>
+
+  <footer>
+    <p>created by Iallen Gábio - iallen@ifpi.edu.br</p>
+    <p>&copy; 2024 - Todos os direitos reservados.</p>
+  </footer>
+
+  <script type="module" src="index.ts"></script>
 </body>
+
 </html>
