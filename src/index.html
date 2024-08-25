@@ -21,10 +21,10 @@
     </nav>
   </header>
 
-  <main id="loadingPage" class="page active middle-align center-align responsive max">
+  <main style="display: none;" id="loadingPage" class="middle-align center-align responsive max">
     <progress class="circle large"></progress>
   </main>
-  <main id="loginPage" class="page middle-align center-align responsive max">
+  <main style="display: none;" id="loginPage" class="middle-align center-align responsive max">
 
     <article class="border round surface-bright large-padding s12 m10 l8 grid">
       <div class="left-align s12 m6">
@@ -51,11 +51,115 @@
         </nav>
       </div>
     </article>
+
   </main>
 
-  <main id="singUpPage" class="page top-align responsive max vertical"></main>
+  <main style="display: none;" id="singUpPage" class="top-align responsive max vertical"></main>
 
-  <main id="taskPage" class="page top-align responsive max vertical">
+
+  <main style="display: none;" id="taskPage" class="responsive max margin">
+
+    <div class="grid">
+      <div class="field label prefix round border s10 m5 l7">
+        <i>search</i>
+        <input type="text">
+        <label>Buscar Tarefas</label>
+      </div>
+      <button class="border circle large s2 m1 l1">
+        <i>search</i>
+      </button>
+      <div class="field middle-align s12 m6 l3">
+        <nav>
+          <label class="radio">
+            <input type="radio" name="radio4_">
+            <span>Todas</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="radio4_">
+            <span>Concluídas</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="radio4_">
+            <span>Não concluídas</span>
+          </label>
+        </nav>
+      </div>
+    </div>
+    <div class="space"></div>
+    <div class="divider"></div>
+    <div class="space"></div>
+    <div class="grid">
+      
+      <div class="s12 l6 primary-container padding">
+        <h5>Não concluídas</h5>
+        <article class="round">
+          <div class="row">
+            <div class="max">
+              <h5>Titulo da tarefa 01</h5>
+              <p>Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01.</p>
+            </div>
+          </div>
+          <nav class="right-align">
+            <button class="error-container"><i>delete</i><span>Remover</span></button>
+            <button><i>check</i><span>Concluir</span></button>
+          </nav>
+        </article>
+        <article class="round">
+          <div class="row">
+            <div class="max">
+              <h5>Titulo da tarefa 01</h5>
+              <p>Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01.</p>
+            </div>
+          </div>
+          <nav class="right-align">
+            <button class="error-container"><i>delete</i><span>Remover</span></button>
+            <button><i>check</i><span>Concluir</span></button>
+          </nav>
+        </article>
+        <article class="round">
+          <div class="row">
+            <div class="max">
+              <h5>Titulo da tarefa 01</h5>
+              <p>Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01.</p>
+            </div>
+          </div>
+          <nav class="right-align">
+            <button class="error-container"><i>delete</i><span>Remover</span></button>
+            <button><i>check</i><span>Concluir</span></button>
+          </nav>
+        </article>
+        <div class="large-space"></div>
+        <div class="large-space"></div>
+        <div class="large-space"></div>
+      </div>
+      <div class="s12 l6 secondary-container padding">
+        <h5>Concluídas</h5>
+        <article class="round">
+          <div class="row">
+            <div class="max">
+              <h5>Titulo da tarefa 01</h5>
+              <p>Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01.</p>
+            </div>
+          </div>
+          <nav class="right-align">
+            <button class="error-container"><i>delete</i><span>Remover</span></button>
+            <button class="secondary"><i>undo</i><span>Refazer</span></button>
+          </nav>
+        </article>
+        <div class="large-space"></div>
+        <div class="large-space"></div>
+        <div class="large-space"></div>
+      </div>
+    </div>
+
+    <div class="fixed right bottom large-margin">
+      <button class="circle right-round bottom-round extra medium-elevate">
+        <i>add</i>
+      </button>
+
+      <div class="large-space"></div>
+      <div class="large-space"></div>
+    </div>
 
 
   </main>

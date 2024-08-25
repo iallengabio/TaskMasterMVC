@@ -34,11 +34,19 @@ export class Router {
      */
     showPage(page: HTMLElement) {
         const pages = [this.loginPage, this.signUpPage, this.taskPage, this.loadingPage];
-        pages.forEach(page => page.classList.remove("active"));
+        pages.forEach(this.hidePage);
         
         if (page) {
-            page.classList.add("active");
+            this.unHidePage(page);
         }
+    }
+
+    private hidePage(page : HTMLElement){
+        page.style.display = 'none';
+    }
+
+    private unHidePage(page : HTMLElement){
+        page.style.display = 'block';
     }
 }
 
