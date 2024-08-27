@@ -44,7 +44,7 @@ export class AppView {
     run() {
         this.authPresenter.observeAuthChanges((user) => {
             if (user) {
-                console.log("Usuário autenticado:", user);
+                //console.log("Usuário autenticado:", user);
                 this.router.showPage(this.router.taskPage);
             } else {
                 this.router.showPage(this.router.loginPage);

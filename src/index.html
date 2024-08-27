@@ -1,175 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Master</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task Master</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <h5 class="max">Task Master</h5>
+        <button id="modeThemeButton" class="circle transparent">
+          <i>light_mode</i>
+        </button>
+        <button
+          id="logoutButton"
+          class="page border tertiary-border tertiary-text"
+        >
+          <i>logout</i>
+          <span>Sair</span>
+        </button>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav>
-      <h5 class="max">Task Master</h5>
-      <button id="modeThemeButton" class="circle transparent">
-        <i>light_mode</i>
-      </button>
-      <button id="logoutButton" class="page border tertiary-border tertiary-text">
-        <i>logout</i>
-        <span>Sair</span>
-      </button>
-    </nav>
-  </header>
-
-  <main style="display: none;" id="loadingPage" class="middle-align center-align responsive max">
-    <progress class="circle large"></progress>
-  </main>
-  <main style="display: none;" id="loginPage" class="middle-align center-align responsive max">
-
-    <article class="border round surface-bright large-padding s12 m10 l8 grid">
-      <div class="left-align s12 m6">
-        <i>login</i>
-        <h2>Fazer login</h2>
-        <p>Entre com seu email e senha ou com a sua conta do Google.</p>
-        <p>Ou <a id="googleLogin" class="underline primary-text" href="#">clique aqui</a> para fazer login com o Google
-        </p>
-      </div>
-      <div class="s12 m6">
-        <div class="large-space"></div>
-        <div class="field label border">
-          <input type="email" id="emailInput" />
-          <label for="emailInput">Email</label>
-        </div>
-        <div class="field label border">
-          <input type="password" id="passwordInput" />
-          <label for="passwordInput">Senha</label>
-        </div>
-        <div class="space"></div>
-        <nav class="right-align">
-          <button id="signUpButton" class="border">Criar conta</button>
-          <button id="loginButton" class="">Avançar</button>
-        </nav>
-      </div>
-    </article>
-
-  </main>
-
-  <main style="display: none;" id="singUpPage" class="top-align responsive max vertical"></main>
-
-
-  <main style="display: none;" id="taskPage" class="responsive max margin">
-
-    <div class="grid">
-      <div class="field label prefix round border s10 m5 l7">
-        <i>search</i>
-        <input type="text">
-        <label>Buscar Tarefas</label>
-      </div>
-      <button class="border circle large s2 m1 l1">
-        <i>search</i>
-      </button>
-      <div class="field middle-align s12 m6 l3">
-        <nav>
-          <label class="radio">
-            <input type="radio" name="radio4_">
-            <span>Todas</span>
-          </label>
-          <label class="radio">
-            <input type="radio" name="radio4_">
-            <span>Concluídas</span>
-          </label>
-          <label class="radio">
-            <input type="radio" name="radio4_">
-            <span>Não concluídas</span>
-          </label>
-        </nav>
-      </div>
-    </div>
-    <div class="space"></div>
-    <div class="divider"></div>
-    <div class="space"></div>
-    <div class="grid">
-      
-      <div class="s12 l6 primary-container padding">
-        <h5>Não concluídas</h5>
-        <article class="round">
-          <div class="row">
-            <div class="max">
-              <h5>Titulo da tarefa 01</h5>
-              <p>Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01.</p>
-            </div>
-          </div>
-          <nav class="right-align">
-            <button class="error-container"><i>delete</i><span>Remover</span></button>
-            <button><i>check</i><span>Concluir</span></button>
-          </nav>
-        </article>
-        <article class="round">
-          <div class="row">
-            <div class="max">
-              <h5>Titulo da tarefa 01</h5>
-              <p>Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01.</p>
-            </div>
-          </div>
-          <nav class="right-align">
-            <button class="error-container"><i>delete</i><span>Remover</span></button>
-            <button><i>check</i><span>Concluir</span></button>
-          </nav>
-        </article>
-        <article class="round">
-          <div class="row">
-            <div class="max">
-              <h5>Titulo da tarefa 01</h5>
-              <p>Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01.</p>
-            </div>
-          </div>
-          <nav class="right-align">
-            <button class="error-container"><i>delete</i><span>Remover</span></button>
-            <button><i>check</i><span>Concluir</span></button>
-          </nav>
-        </article>
-        <div class="large-space"></div>
-        <div class="large-space"></div>
-        <div class="large-space"></div>
-      </div>
-      <div class="s12 l6 secondary-container padding">
-        <h5>Concluídas</h5>
-        <article class="round">
-          <div class="row">
-            <div class="max">
-              <h5>Titulo da tarefa 01</h5>
-              <p>Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01. Descrição da tarefa 01, Descrição da tarefa 01, Descrição da tarefa 01.</p>
-            </div>
-          </div>
-          <nav class="right-align">
-            <button class="error-container"><i>delete</i><span>Remover</span></button>
-            <button class="secondary"><i>undo</i><span>Refazer</span></button>
-          </nav>
-        </article>
-        <div class="large-space"></div>
-        <div class="large-space"></div>
-        <div class="large-space"></div>
-      </div>
-    </div>
-
-    <div class="fixed right bottom large-margin">
-      <button class="circle right-round bottom-round extra medium-elevate">
-        <i>add</i>
-      </button>
-
+    <main
+      style="display: block"
+      id="loadingPage"
+      class="middle-align center-align responsive max"
+    >
       <div class="large-space"></div>
+      <progress class="circle large"></progress>
+    </main>
+    <main
+      style="display: none"
+      id="loginPage"
+      class="middle-align center-align responsive max"
+    >
       <div class="large-space"></div>
-    </div>
+      <article
+        class="border round surface-bright large-padding s12 m10 l8 grid"
+      >
+        <div class="left-align s12 m6">
+          <i>login</i>
+          <h2>Fazer login</h2>
+          <p>Entre com seu email e senha ou com a sua conta do Google.</p>
+          <p>
+            Ou
+            <a id="googleLogin" class="underline primary-text" href="#"
+              >clique aqui</a
+            >
+            para fazer login com o Google
+          </p>
+        </div>
+        <div class="s12 m6">
+          <div class="large-space"></div>
+          <div class="field label border">
+            <input type="email" id="emailInput" />
+            <label for="emailInput">Email</label>
+          </div>
+          <div class="field label border">
+            <input type="password" id="passwordInput" />
+            <label for="passwordInput">Senha</label>
+          </div>
+          <div class="space"></div>
+          <nav class="right-align">
+            <button id="signUpButton" class="border">Criar conta</button>
+            <button id="loginButton" class="">Avançar</button>
+          </nav>
+        </div>
+      </article>
+    </main>
 
+    <main
+      style="display: none"
+      id="singUpPage"
+      class="top-align responsive max vertical"
+    ></main>
 
-  </main>
+    <main style="display: none" id="taskPage" class="responsive max margin">
+      <div class="grid">
+        <div class="field label prefix round border s10 m5 l7">
+          <i>search</i>
+          <input type="text" />
+          <label>Buscar Tarefas</label>
+        </div>
+        <button class="border circle large s2 m1 l1">
+          <i>search</i>
+        </button>
+        <div class="field middle-align s12 m6 l3">
+          <nav>
+            <label class="radio">
+              <input type="radio" name="radio4_" />
+              <span>Todas</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio4_" />
+              <span>Concluídas</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio4_" />
+              <span>Não concluídas</span>
+            </label>
+          </nav>
+        </div>
+      </div>
+      <div class="space"></div>
+      <div class="divider"></div>
+      <div class="space"></div>
+      <div class="grid">
+        <div class="s12 l6 primary-container padding round border">
+          <h5>Não concluídas</h5>
+          <div class="space"></div>
+          <div id="uncompleted-tasks-container">
 
-  <footer>
-    <p>created by Iallen Gábio - iallen@ifpi.edu.br</p>
-    <p>&copy; 2024 - Todos os direitos reservados.</p>
-  </footer>
+          </div>
+          <div class="large-space"></div>
+          <div class="large-space"></div>
+          <div class="large-space"></div>
+        </div>
+        <div class="s12 l6 secondary-container padding round border">
+          <h5>Concluídas</h5>
+          <div class="space"></div>
+          <div id="completed-tasks-container"></div>
+          <div class="large-space"></div>
+          <div class="large-space"></div>
+          <div class="large-space"></div>
+        </div>
+      </div>
 
-  <script type="module" src="index.ts"></script>
-</body>
+      <div class="fixed right bottom large-margin">
+        <button id="add-task"
+          class="extend circle right-round bottom-round extra medium-elevate"
+        >
+          <i>add</i>
+          <span>Tarefa</span>
+        </button>
 
+        <div class="large-space"></div>
+        <div class="large-space"></div>
+      </div>
+
+      <div id="dialogContainer">
+        
+      </div>
+    </main>
+
+    <footer>
+      <p>created by Iallen Gábio - iallen@ifpi.edu.br</p>
+      <p>&copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="module" src="index.ts"></script>
+  </body>
 </html>

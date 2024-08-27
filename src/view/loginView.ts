@@ -59,11 +59,11 @@ export class LoginView{
 
         this.authPresenter.observeAuthChanges((user)=>{
             if(user){
-                console.log('active');
+                //console.log('active');
                 this.logoutButton.classList.add('active');
             } 
             else {
-                console.log('deactive');
+                //console.log('deactive');
                 this.logoutButton.classList.remove('active');
             }
         });
