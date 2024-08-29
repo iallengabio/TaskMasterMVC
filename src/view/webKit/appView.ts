@@ -1,6 +1,7 @@
 import ui from "beercss";
-import { AuthPresenterInterface } from "../presenter/authPresenterInterface";
 import { Router } from "./util/router";
+import { AuthPresenterInterface } from "../../presenter/authPresenterInterface";
+
 
 /**
  * The main view class for the application.

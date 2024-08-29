@@ -1,5 +1,5 @@
 import { AuthPresenterInterface } from "../presenter/authPresenterInterface";
-import { Router } from "./util/router";
+import { Router } from "./webKit/util/router";
 
 /**
  * Class responsible for managing the login view.
